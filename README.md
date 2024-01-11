@@ -35,13 +35,6 @@ Determines the position of a body on a slope surface based on its mass.
 
 The contract relies on the OpenZeppelin SafeMath library to perform secure mathematical operations, ensuring protection against overflow and underflow vulnerabilities.
 
-### Installation
-
-Before deploying the contract, make sure to install the necessary dependencies using the following command:
-
-```bash
-npm install @openzeppelin/contracts
-```
 
 ## Usage
 
