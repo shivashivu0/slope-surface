@@ -1,0 +1,33 @@
+// SPDX-License-Identifier: MIT
+pragma solidity ^0.8.0;
+
+// Import the correct library for math functions
+import "@openzeppelin/contracts/utils/math/SafeMath.sol";
+
+contract SlopeSurface {
+    using SafeMath for uint256;
+
+    uint256 constant velocity = 2; // Velocity in m/s
+
+    function calculateMomentum(uint256 mass_, uint256 angle) external pure returns (uint256) {
+        require(angle >25 , "Body will not slide");
+        assert(mass_ > 10);
+
+        // Calculate momentum: p = m * v
+        uint256 momentum = mass_.mul(velocity);
+
+        return momentum;
+    }
+
+    function bodyPosition(uint256 mass) external pure {
+        if (mass <= 50) {
+           
+        } else {
+            
+        revert("Body will continue to roll");
+        }
+    }
+}
+
+
+
